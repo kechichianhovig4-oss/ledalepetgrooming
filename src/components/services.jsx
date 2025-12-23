@@ -336,7 +336,7 @@ function ServicesPage() {
             <h4 className="font-bold text-gray-900">Contact</h4>
             <div className="flex items-center gap-2 text-gray-600 text-sm">
               <span className="material-symbols-outlined text-[18px]">call</span>
-              (555) 123-4567
+              (832) 510-6305
             </div>
             <div className="flex items-center gap-2 text-gray-600 text-sm">
               <span className="material-symbols-outlined text-[18px]">mail</span>

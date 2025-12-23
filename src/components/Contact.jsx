@@ -16,22 +16,22 @@ function ContactPage() {
     {
       icon: "location_on",
       title: "Visit Us",
-      content: "1234 Dogwood Lane, Barktown, CA 90210",
+      content: "1515 Spell St Houston, TX 77022",
       href: "https://maps.google.com",
       type: "link"
     },
     {
       icon: "call",
       title: "Call Us",
-      content: "(555) 123-4567",
-      href: "tel:5551234567",
+      content: "(832) 510-6305",
+      href: "tel:8325106305",
       type: "link"
     },
     {
       icon: "mail",
       title: "Email Us",
-      content: "hello@ledalesgrooming.com",
-      href: "mailto:hello@ledalesgrooming.com",
+      content: "ledalepets@mail.com",
+      href: "mailto:ledalepets@mail.com",
       type: "link"
     }
   ];
@@ -249,19 +249,11 @@ function ContactPage() {
               </div>
 
               <div className="flex flex-col gap-4">
-                <h3 className="text-lg font-bold text-gray-900">Follow Our Adventures</h3>
+               
                 <div className="flex gap-4">
-                  {socialLinks.map((social, index) => (
-                    <a 
-                      key={index}
-                      className="size-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-primary hover:text-white transition-all"
-                      href="#"
-                      aria-label={social.name}
-                      style={{ '--tw-bg-opacity': 1, backgroundColor: 'rgba(43, 140, 238, var(--tw-bg-opacity))' }}
-                    >
-                      {social.icon}
-                    </a>
-                  ))}
+                
+                    
+                  
                 </div>
               </div>
             </div>
