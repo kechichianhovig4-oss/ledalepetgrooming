@@ -30,8 +30,8 @@ function ContactPage() {
     {
       icon: "mail",
       title: "Email Us",
-      content: "ledalepets@mail.com",
-      href: "mailto:ledalepets@mail.com",
+      content: "Rhonda.Gibson@mail.com",
+      href: "mailto:Rhonda.Gibson@mail.com",
       type: "link"
     }
   ];
@@ -97,7 +97,7 @@ function ContactPage() {
               onClick={() => handleNavClick('/')}
               className="text-lg font-bold leading-tight tracking-[-0.015em]"
             >
-              Ledale's Grooming
+              Rhonda's Grooming
             </Link>
           </div>
           
@@ -361,7 +361,7 @@ function ContactPage() {
               <div className="size-6 text-primary">
                 <span className="material-symbols-outlined text-xl" style={{ color: '#2b8cee' }}>pets</span>
               </div>
-              <Link to="/" className="font-bold text-lg">Ledale's</Link>
+              <Link to="/" className="font-bold text-lg">Rhonda's</Link>
             </div>
             <p className="text-gray-600 text-sm">Top-tier grooming services for your beloved pets. We treat them like family.</p>
           </div>
@@ -382,7 +382,7 @@ function ContactPage() {
             </div>
             <div className="flex items-center gap-2 text-gray-600 text-sm">
               <span className="material-symbols-outlined text-[18px]">mail</span>
-              ledalepets@mail.com
+              Rhonda.Gibson@mail.com
             </div>
             <div className="flex items-center gap-2 text-gray-600 text-sm">
               <span className="material-symbols-outlined text-[18px]">location_on</span>
@@ -390,15 +390,11 @@ function ContactPage() {
             </div>
           </div>
 
-          <div className="col-span-1 flex flex-col gap-3">
-            <h4 className="font-bold text-gray-900">Legal</h4>
-            <Link to="#" className="text-gray-600 text-sm hover:text-primary">Privacy Policy</Link>
-            <Link to="#" className="text-gray-600 text-sm hover:text-primary">Terms of Service</Link>
-          </div>
+          
         </div>
 
         <div className="max-w-[1280px] mx-auto mt-12 pt-8 border-t border-gray-100 text-center">
-          <p className="text-gray-500 text-sm">© 2024 Ledale's Pet Grooming. All rights reserved.</p>
+          <p className="text-gray-500 text-sm">© 2026 Rhonda's Pet Grooming. All rights reserved.</p>
         </div>
       </footer>
     </div>

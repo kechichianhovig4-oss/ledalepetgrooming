@@ -72,7 +72,7 @@ function AboutPage() {
               onClick={() => handleNavClick('/')}
               className="text-lg font-bold leading-tight tracking-[-0.015em]"
             >
-              Ledale's Grooming
+              Rhonda's Grooming
             </Link>
           </div>
           
@@ -185,7 +185,7 @@ function AboutPage() {
         <div className="flex flex-col max-w-[960px] mx-auto w-full mb-8 mt-4">
           <div className="flex flex-wrap justify-between gap-3 p-4">
             <div className="flex min-w-72 flex-col gap-3">
-              <h1 className="text-gray-900 text-4xl font-black leading-tight tracking-[-0.033em]">Getting to Know Ledale's Pet Grooming</h1>
+              <h1 className="text-gray-900 text-4xl font-black leading-tight tracking-[-0.033em]">Getting to Know Rhonda's Pet Grooming</h1>
               <p className="text-gray-600 text-lg font-normal leading-normal">A personal and warm welcome from our family to yours.</p>
             </div>
           </div>
@@ -199,17 +199,17 @@ function AboutPage() {
                 className="w-full bg-center bg-no-repeat bg-cover rounded-xl shadow-lg aspect-[4/5] @[480px]:h-auto @[480px]:min-w-[300px] @[864px]:w-1/2"
                 data-alt="Portrait of Ledale Sauls smiling warmly while holding a small groomed dog"
                 style={{
-                  backgroundImage: `url("https://i.imgur.com/bStD2kg.png")`
+                  backgroundImage: `url("https://i.imgur.com/a0WkyvZ.png")`
                 }}
               ></div>
               <div className="flex flex-col gap-6 @[480px]:min-w-[300px] @[480px]:gap-8 @[864px]:w-1/2 justify-center">
                 <div className="flex flex-col gap-4 text-left">
                   <h2 className="text-gray-900 text-3xl font-black leading-tight tracking-[-0.033em] @[480px]:text-4xl">
-                    Meet Ledale Sauls
+                    Meet Rhonda Gibson
                   </h2>
                   <div className="text-gray-600 text-base font-normal leading-relaxed space-y-4">
                     <p>
-                      Hi, I'm Ledale! With over 15 years of experience in pet care, I founded this grooming service to provide a calm, loving environment for your furry friends.
+                      Hi, I'm Rhonda! With over 15 years of experience in pet care, I founded this grooming service to provide a calm, loving environment for your furry friends.
                     </p>
                     <p>
                       My journey began volunteering at local shelters, where I learned that patience and gentle touch are just as important as the perfect trim. My passion is ensuring every pet feels safe, comfortable, and loved while in my care.
@@ -221,7 +221,7 @@ function AboutPage() {
                   className="flex w-fit cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-blue-50 text-primary hover:bg-primary hover:text-white transition-all text-sm font-bold leading-normal tracking-[0.015em]"
                   style={{ color: '#2b8cee' }}
                 >
-                  <span className="truncate">Contact Ledale</span>
+                  <span className="truncate">Contact Rhonda</span>
                 </button>
               </div>
             </div>
@@ -259,7 +259,7 @@ function AboutPage() {
         <div className="flex flex-col max-w-[960px] mx-auto w-full mb-16 px-4">
           <div className="bg-blue-50 border border-blue-200 rounded-2xl p-8 md:p-16 text-center shadow-sm">
             <span className="material-symbols-outlined text-primary text-5xl mb-6" style={{ color: '#2b8cee' }}>verified</span>
-            <h2 className="text-3xl font-bold mb-4 text-gray-900 tracking-tight">The Ledale Promise</h2>
+            <h2 className="text-3xl font-bold mb-4 text-gray-900 tracking-tight">The Rhonda Promise</h2>
             <p className="text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed">
               We promise a personal touch on every groom, using only small-batch, all-natural shampoos in a calm, fear-free environment. Unlike high-volume salons, your pet is family here, and we treat them with the dignity and love they deserve.
             </p>
@@ -282,10 +282,10 @@ function AboutPage() {
                     <span className="material-symbols-outlined text-white text-3xl">location_on</span>
                   </div>
                   <h1 className="text-white text-4xl font-black leading-tight tracking-[-0.033em] md:text-5xl drop-shadow-md">
-                    Our Home: Ledale
+                    Our Home: Rhonda
                   </h1>
                   <h2 className="text-white/90 text-lg font-medium leading-relaxed drop-shadow-sm">
-                    We are proud to be a part of the beautiful Ledale community. Serving our neighbors and their pets is a privilege we cherish every day. We are more than just a business; we are your neighbors.
+                    We are proud to be a part of the beautiful Rhonda community. Serving our neighbors and their pets is a privilege we cherish every day. We are more than just a business; we are your neighbors.
                   </h2>
                 </div>
               </div>
@@ -302,7 +302,7 @@ function AboutPage() {
               <div className="size-6 text-primary">
                 <span className="material-symbols-outlined text-xl" style={{ color: '#2b8cee' }}>pets</span>
               </div>
-              <Link to="/" onClick={() => handleNavClick('/')} className="font-bold text-lg">Ledale's</Link>
+              <Link to="/" onClick={() => handleNavClick('/')} className="font-bold text-lg">Rhonda's</Link>
             </div>
             <p className="text-gray-600 text-sm">Top-tier grooming services for your beloved pets. We treat them like family.</p>
           </div>
@@ -323,7 +323,7 @@ function AboutPage() {
             </div>
             <div className="flex items-center gap-2 text-gray-600 text-sm">
               <span className="material-symbols-outlined text-[18px]">mail</span>
-              ledalepets@mail.com
+              Rhonda.gibson@mail.com
             </div>
             <div className="flex items-center gap-2 text-gray-600 text-sm">
               <span className="material-symbols-outlined text-[18px]">location_on</span>
@@ -331,15 +331,11 @@ function AboutPage() {
             </div>
           </div>
 
-          <div className="col-span-1 flex flex-col gap-3">
-            <h4 className="font-bold text-gray-900">Legal</h4>
-            <Link to="#" className="text-gray-600 text-sm hover:text-primary">Privacy Policy</Link>
-            <Link to="#" className="text-gray-600 text-sm hover:text-primary">Terms of Service</Link>
-          </div>
+        
         </div>
 
         <div className="max-w-[1280px] mx-auto mt-12 pt-8 border-t border-gray-100 text-center">
-          <p className="text-gray-500 text-sm">© 2024 Ledale's Pet Grooming. All rights reserved.</p>
+          <p className="text-gray-500 text-sm">© 2026 Rhonda's Pet Grooming. All rights reserved.</p>
         </div>
       </footer>
     </div>
