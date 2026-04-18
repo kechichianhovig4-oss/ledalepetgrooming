@@ -199,7 +199,7 @@ function AboutPage() {
                 className="w-full bg-center bg-no-repeat bg-cover rounded-xl shadow-lg aspect-[4/5] @[480px]:h-auto @[480px]:min-w-[300px] @[864px]:w-1/2"
                 data-alt="Portrait of Sayed Hashmi smiling warmly while holding a small groomed dog"
                 style={{
-                  backgroundImage: `url("https://i.imgur.com/kZrtNvZ.jpeg")`
+                  backgroundImage: `url("https://i.imgur.com/KUDwFA6.jpeg")`
                 }}
               ></div>
               <div className="flex flex-col gap-6 @[480px]:min-w-[300px] @[480px]:gap-8 @[864px]:w-1/2 justify-center">
