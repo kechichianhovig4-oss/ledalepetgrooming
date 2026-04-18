@@ -44,7 +44,7 @@ function HomePage() {
               onClick={() => handleNavClick('/')}
               className="text-lg font-bold leading-tight tracking-[-0.015em]"
             >
-              Rhonda's Grooming
+              Sheya Pet Grooming
             </Link>
           </div>
           
@@ -162,10 +162,10 @@ function HomePage() {
         >
           <div className="flex flex-col gap-4 text-left max-w-[720px] z-10">
             <h1 className="text-white text-4xl font-black leading-tight tracking-[-0.033em] md:text-5xl lg:text-6xl drop-shadow-sm">
-              Rhonda's Premier Pet Pampering. Where Comfort Meets the Perfect Cut.
+              Sheya Pet Grooming — Where Comfort Meets the Perfect Cut.
             </h1>
             <h2 className="text-white/90 text-lg font-medium leading-normal max-w-[600px] drop-shadow-sm">
-              Professional pet styling in a stress-free environment right here in Ledale. Give your furry friend the spa day they deserve.
+              Professional pet styling in a stress-free environment. Give your furry friend the spa day they deserve.
             </h2>
             <div className="pt-4">
               <button 
@@ -187,7 +187,7 @@ function HomePage() {
           </div>
           <h2 className="text-gray-900 text-[28px] md:text-[32px] font-bold leading-tight tracking-[-0.015em]">Grooming is an Act of Love</h2>
           <p className="text-gray-600 text-lg font-normal leading-relaxed">
-            At Rhonda's, we believe grooming is an act of love. Our gentle, expert stylists provide a stress-free spa experience for your pet in the heart of Ledale. From a simple bath to a full breed-standard trim, we tailor every service to your pet's unique needs.
+            At Sheya Pet Grooming, we believe grooming is an act of love. Our gentle, expert stylists provide a stress-free spa experience for your pet. From a simple bath to a full breed-standard trim, we tailor every service to your pet's unique needs.
           </p>
         </div>
       </section>
@@ -196,7 +196,7 @@ function HomePage() {
         <div className="max-w-[1200px] w-full flex flex-col gap-10">
           <div className="flex flex-col gap-2 items-start md:items-center md:text-center">
             <h1 className="text-gray-900 tracking-tight text-[32px] font-bold leading-tight md:text-4xl">
-              Why Choose Rhonda's?
+              Why Choose Sheya?
             </h1>
             <p className="text-gray-600 text-base font-normal leading-normal max-w-[720px]">
               We offer more than just a haircut. Experience the difference.
@@ -235,8 +235,8 @@ function HomePage() {
                 <span className="material-symbols-outlined">favorite</span>
               </div>
               <div className="flex flex-col gap-2">
-                <h2 className="text-gray-900 text-lg font-bold leading-tight">Rhonda's Favorite</h2>
-                <p className="text-gray-600 text-sm font-normal leading-normal">Voted #1 Grooming Service in the community two years running.</p>
+                <h2 className="text-gray-900 text-lg font-bold leading-tight">Loved by Community</h2>
+                <p className="text-gray-600 text-sm font-normal leading-normal">Voted #1 Grooming Service in the community.</p>
               </div>
             </div>
           </div>
@@ -267,7 +267,7 @@ function HomePage() {
               <span className="material-symbols-outlined fill-current">star</span>
             </div>
             <p className="text-gray-900 text-lg md:text-xl font-medium italic leading-relaxed">
-              "My poodle has never looked better! The team at Ledale's was so patient with her anxiety, and she came home looking like a show dog. We are customers for life!"
+              "My poodle has never looked better! The team at Sheya was so patient with her anxiety, and she came home looking like a show dog. We are customers for life!"
             </p>
             <div>
               <p className="text-gray-900 font-bold text-base">Sarah & Bella</p>
@@ -290,7 +290,7 @@ function HomePage() {
             Your pet's best groom is just a click away.
           </h2>
           <p className="text-white/90 text-lg md:text-xl font-medium max-w-[600px]">
-            Schedule an appointment today and treat your furry friend to the Rhonda experience!
+            Schedule an appointment today and treat your furry friend to the Sheya experience!
           </p>
           <button 
             onClick={handleContactClick}
@@ -309,7 +309,7 @@ function HomePage() {
               <div className="size-6 text-primary">
                 <span className="material-symbols-outlined text-xl" style={{ color: '#2b8cee' }}>pets</span>
               </div>
-              <Link to="/" onClick={() => handleNavClick('/')} className="font-bold text-lg">Rhonda's</Link>
+              <Link to="/" onClick={() => handleNavClick('/')} className="font-bold text-lg">Sheya Pet Grooming</Link>
             </div>
             <p className="text-gray-600 text-sm">Top-tier grooming services for your beloved pets. We treat them like family.</p>
           </div>
@@ -326,23 +326,28 @@ function HomePage() {
             <h4 className="font-bold text-gray-900">Contact</h4>
             <div className="flex items-center gap-2 text-gray-600 text-sm">
               <span className="material-symbols-outlined text-[18px]">call</span>
-              (832) 510-63057
+              (832) 510-6305
             </div>
             <div className="flex items-center gap-2 text-gray-600 text-sm">
               <span className="material-symbols-outlined text-[18px]">mail</span>
-              Rhonda.gibson@mail.com
+              sheyapetgrooming@consultant.com
             </div>
             <div className="flex items-center gap-2 text-gray-600 text-sm">
               <span className="material-symbols-outlined text-[18px]">location_on</span>
-              515 Spell St Houston, TX 77022
+              4012 Packard Ridge Rd, Antioch, CA 94531
             </div>
           </div>
 
-          
+          <div className="col-span-1 flex flex-col gap-3">
+            <h4 className="font-bold text-gray-900">Hours</h4>
+            <p className="text-gray-600 text-sm">Mon - Fri: 9am – 6pm</p>
+            <p className="text-gray-600 text-sm">Saturday: 10am – 4pm</p>
+            <p className="text-gray-600 text-sm">Sunday: Closed</p>
+          </div>
         </div>
 
         <div className="max-w-[1280px] mx-auto mt-12 pt-8 border-t border-gray-100 text-center">
-          <p className="text-gray-500 text-sm">© 2026 Rhonda's Pet Grooming. All rights reserved.</p>
+          <p className="text-gray-500 text-sm">© 2026 Sheya Pet Grooming. All rights reserved.</p>
         </div>
       </footer>
     </div>

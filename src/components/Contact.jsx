@@ -12,12 +12,16 @@ function ContactPage() {
     navigate(path);
   };
 
+  const handleContactClick = () => {
+    navigate('/contact');
+  };
+
   const contactInfo = [
     {
       icon: "location_on",
       title: "Visit Us",
-      content: "1515 Spell St Houston, TX 77022",
-      href: "https://maps.google.com",
+      content: "4012 Packard Ridge Rd, Antioch, CA 94531",
+      href: "https://maps.google.com/?q=4012+Packard+Ridge+Rd+Antioch+CA+94531",
       type: "link"
     },
     {
@@ -30,8 +34,8 @@ function ContactPage() {
     {
       icon: "mail",
       title: "Email Us",
-      content: "Rhonda.Gibson@mail.com",
-      href: "mailto:Rhonda.Gibson@mail.com",
+      content: "sheyapetgrooming@consultant.com",
+      href: "mailto:sheyapetgrooming@consultant.com",
       type: "link"
     }
   ];
@@ -97,7 +101,7 @@ function ContactPage() {
               onClick={() => handleNavClick('/')}
               className="text-lg font-bold leading-tight tracking-[-0.015em]"
             >
-              Rhonda's Grooming
+              Sheya Pet Grooming
             </Link>
           </div>
           
@@ -144,6 +148,15 @@ function ContactPage() {
               {isMobileMenuOpen ? 'close' : 'menu'}
             </span>
           </button>
+          
+          {/* Desktop Book Now Button */}
+          <button 
+            onClick={handleContactClick}
+            className="hidden md:flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 text-white text-sm font-bold hover:bg-blue-600 transition-colors"
+            style={{ backgroundColor: '#2b8cee' }}
+          >
+            <span className="truncate">Book Now</span>
+          </button>
         </div>
         
         {/* Mobile Navigation Menu */}
@@ -179,6 +192,18 @@ function ContactPage() {
               >
                 Contact
               </Link>
+              <div className="pt-4 border-t border-gray-200">
+                <button 
+                  onClick={() => {
+                    handleContactClick();
+                    setIsMobileMenuOpen(false);
+                  }}
+                  className="w-full flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-4 text-white text-sm font-bold hover:bg-blue-600 transition-colors"
+                  style={{ backgroundColor: '#2b8cee' }}
+                >
+                  <span className="truncate">Book Now</span>
+                </button>
+              </div>
             </div>
           </div>
         )}
@@ -249,11 +274,18 @@ function ContactPage() {
               </div>
 
               <div className="flex flex-col gap-4">
-               
+                <h2 className="text-2xl font-bold text-gray-900">Follow Us</h2>
                 <div className="flex gap-4">
-                
-                    
-                  
+                  {socialLinks.map((social, idx) => (
+                    <a
+                      key={idx}
+                      href="#"
+                      className="size-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-primary hover:text-white transition-colors"
+                      aria-label={social.name}
+                    >
+                      {social.icon}
+                    </a>
+                  ))}
                 </div>
               </div>
             </div>
@@ -269,14 +301,14 @@ function ContactPage() {
                   <h2 className="text-2xl font-bold">Ready for a trim?</h2>
                   <p className="text-blue-100">Book your appointment online instantly. No phone tag required.</p>
                 </div>
-                <a 
+                <button 
+                  onClick={handleContactClick}
                   className="mt-2 w-full max-w-sm rounded-full bg-white py-3.5 px-6 text-base font-bold shadow-sm hover:bg-blue-50 transition-colors flex items-center justify-center gap-2 group"
-                  href="#"
                   style={{ color: '#2b8cee' }}
                 >
                   <span className="material-symbols-outlined group-hover:animate-pulse">calendar_month</span>
                   Book an Appointment Online
-                </a>
+                </button>
               </div>
 
               {/* Contact Form */}
@@ -361,7 +393,7 @@ function ContactPage() {
               <div className="size-6 text-primary">
                 <span className="material-symbols-outlined text-xl" style={{ color: '#2b8cee' }}>pets</span>
               </div>
-              <Link to="/" className="font-bold text-lg">Rhonda's</Link>
+              <Link to="/" onClick={() => handleNavClick('/')} className="font-bold text-lg">Sheya Pet Grooming</Link>
             </div>
             <p className="text-gray-600 text-sm">Top-tier grooming services for your beloved pets. We treat them like family.</p>
           </div>
@@ -382,19 +414,24 @@ function ContactPage() {
             </div>
             <div className="flex items-center gap-2 text-gray-600 text-sm">
               <span className="material-symbols-outlined text-[18px]">mail</span>
-              Rhonda.Gibson@mail.com
+              sheyapetgrooming@consultant.com
             </div>
             <div className="flex items-center gap-2 text-gray-600 text-sm">
               <span className="material-symbols-outlined text-[18px]">location_on</span>
-               515 Spell St Houston, TX 77022
+              4012 Packard Ridge Rd, Antioch, CA 94531
             </div>
           </div>
 
-          
+          <div className="col-span-1 flex flex-col gap-3">
+            <h4 className="font-bold text-gray-900">Hours</h4>
+            <p className="text-gray-600 text-sm">Mon - Fri: 9am – 6pm</p>
+            <p className="text-gray-600 text-sm">Saturday: 10am – 4pm</p>
+            <p className="text-gray-600 text-sm">Sunday: Closed</p>
+          </div>
         </div>
 
         <div className="max-w-[1280px] mx-auto mt-12 pt-8 border-t border-gray-100 text-center">
-          <p className="text-gray-500 text-sm">© 2026 Rhonda's Pet Grooming. All rights reserved.</p>
+          <p className="text-gray-500 text-sm">© 2026 Sheya Pet Grooming. All rights reserved.</p>
         </div>
       </footer>
     </div>

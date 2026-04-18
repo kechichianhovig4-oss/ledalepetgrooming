@@ -137,7 +137,7 @@ function ServicesPage() {
               onClick={() => handleNavClick('/')}
               className="text-lg font-bold leading-tight tracking-[-0.015em]"
             >
-              Rhonda's Grooming
+              Sheya Pet Grooming
             </Link>
           </div>
           
@@ -311,7 +311,7 @@ function ServicesPage() {
         </div>
       </div>
 
-      {/* Footer - Same as other components */}
+      {/* Footer - Rebranded with Sheya contact info */}
       <footer className="bg-white border-t border-gray-200 py-12 px-4 sm:px-10">
         <div className="max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-1 flex flex-col gap-4">
@@ -319,7 +319,7 @@ function ServicesPage() {
               <div className="size-6 text-primary">
                 <span className="material-symbols-outlined text-xl" style={{ color: '#2b8cee' }}>pets</span>
               </div>
-              <Link to="/" onClick={() => handleNavClick('/')} className="font-bold text-lg">Rhonda's</Link>
+              <Link to="/" onClick={() => handleNavClick('/')} className="font-bold text-lg">Sheya Pet Grooming</Link>
             </div>
             <p className="text-gray-600 text-sm">Top-tier grooming services for your beloved pets. We treat them like family.</p>
           </div>
@@ -340,19 +340,24 @@ function ServicesPage() {
             </div>
             <div className="flex items-center gap-2 text-gray-600 text-sm">
               <span className="material-symbols-outlined text-[18px]">mail</span>
-              Rhonda.Gibson@mail.com
+              sheyapetgrooming@consultant.com
             </div>
             <div className="flex items-center gap-2 text-gray-600 text-sm">
               <span className="material-symbols-outlined text-[18px]">location_on</span>
-              515 Spell St Houston, TX 77022
+              4012 Packard Ridge Rd, Antioch, CA 94531
             </div>
           </div>
 
-         
+          <div className="col-span-1 flex flex-col gap-3">
+            <h4 className="font-bold text-gray-900">Hours</h4>
+            <p className="text-gray-600 text-sm">Mon - Fri: 9am – 6pm</p>
+            <p className="text-gray-600 text-sm">Saturday: 10am – 4pm</p>
+            <p className="text-gray-600 text-sm">Sunday: Closed</p>
+          </div>
         </div>
 
         <div className="max-w-[1280px] mx-auto mt-12 pt-8 border-t border-gray-100 text-center">
-          <p className="text-gray-500 text-sm">© 2026 Rhonda's Pet Grooming. All rights reserved.</p>
+          <p className="text-gray-500 text-sm">© 2026 Sheya Pet Grooming. All rights reserved.</p>
         </div>
       </footer>
     </div>
