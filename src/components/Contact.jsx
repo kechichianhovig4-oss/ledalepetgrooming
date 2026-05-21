@@ -34,8 +34,8 @@ function ContactPage() {
     {
       icon: "mail",
       title: "Email Us",
-      content: "sheyapetgrooming@consultant.com",
-      href: "mailto:sheyapetgrooming@consultant.com",
+      content: "rhondapetgrooming@consultant.com",
+      href: "mailto:rhondapetgrooming@consultant.com",
       type: "link"
     }
   ];
@@ -94,14 +94,14 @@ function ContactPage() {
         <div className="max-w-[1280px] mx-auto px-4 sm:px-10 h-16 flex items-center justify-between">
           <div className="flex items-center gap-4 text-gray-900">
             <div className="size-8 text-primary flex items-center justify-center">
-              <span className="material-symbols-outlined text-3xl">pets</span>
+              <span className="material-symbols-outlined text-3xl" style={{ color: '#8b5cf6' }}>pets</span>
             </div>
             <Link 
               to="/" 
               onClick={() => handleNavClick('/')}
               className="text-lg font-bold leading-tight tracking-[-0.015em]"
             >
-              Sheya Pet Grooming
+              Rhonda Pet Grooming
             </Link>
           </div>
           
@@ -110,29 +110,35 @@ function ContactPage() {
             <Link 
               to="/" 
               onClick={() => handleNavClick('/')}
-              className="text-gray-900 text-sm font-medium leading-normal hover:text-primary transition-colors"
+              className="text-gray-900 text-sm font-medium leading-normal transition-colors"
+              onMouseEnter={(e) => e.target.style.color = '#8b5cf6'}
+              onMouseLeave={(e) => e.target.style.color = '#111827'}
             >
               Home
             </Link>
             <Link 
               to="/services" 
               onClick={() => handleNavClick('/services')}
-              className="text-gray-900 text-sm font-medium leading-normal hover:text-primary transition-colors"
+              className="text-gray-900 text-sm font-medium leading-normal transition-colors"
+              onMouseEnter={(e) => e.target.style.color = '#8b5cf6'}
+              onMouseLeave={(e) => e.target.style.color = '#111827'}
             >
               Services
             </Link>
             <Link 
               to="/about" 
               onClick={() => handleNavClick('/about')}
-              className="text-gray-900 text-sm font-medium leading-normal hover:text-primary transition-colors"
+              className="text-gray-900 text-sm font-medium leading-normal transition-colors"
+              onMouseEnter={(e) => e.target.style.color = '#8b5cf6'}
+              onMouseLeave={(e) => e.target.style.color = '#111827'}
             >
               About
             </Link>
             <Link 
               to="/contact" 
               onClick={() => handleNavClick('/contact')}
-              className="text-primary text-sm font-medium leading-normal"
-              style={{ color: '#2b8cee' }}
+              className="text-sm font-medium leading-normal"
+              style={{ color: '#8b5cf6' }}
             >
               Contact
             </Link>
@@ -152,8 +158,10 @@ function ContactPage() {
           {/* Desktop Book Now Button */}
           <button 
             onClick={handleContactClick}
-            className="hidden md:flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 text-white text-sm font-bold hover:bg-blue-600 transition-colors"
-            style={{ backgroundColor: '#2b8cee' }}
+            className="hidden md:flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 text-white text-sm font-bold transition-colors"
+            style={{ backgroundColor: '#8b5cf6' }}
+            onMouseEnter={(e) => e.target.style.backgroundColor = '#7c3aed'}
+            onMouseLeave={(e) => e.target.style.backgroundColor = '#8b5cf6'}
           >
             <span className="truncate">Book Now</span>
           </button>
@@ -166,29 +174,35 @@ function ContactPage() {
               <Link 
                 to="/" 
                 onClick={() => handleNavClick('/')}
-                className="block px-4 py-3 text-primary text-sm font-medium leading-normal hover:text-blue-600 transition-colors"
-                style={{ color: '#2b8cee' }}
+                className="block px-4 py-3 text-sm font-medium leading-normal transition-colors"
+                style={{ color: '#8b5cf6' }}
               >
                 Home
               </Link>
               <Link 
                 to="/services" 
                 onClick={() => handleNavClick('/services')}
-                className="block px-4 py-3 text-gray-700 text-sm font-medium leading-normal hover:text-primary transition-colors border-t border-gray-200"
+                className="block px-4 py-3 text-gray-700 text-sm font-medium leading-normal transition-colors border-t border-gray-200"
+                onMouseEnter={(e) => e.target.style.color = '#8b5cf6'}
+                onMouseLeave={(e) => e.target.style.color = '#374151'}
               >
                 Services
               </Link>
               <Link 
                 to="/about" 
                 onClick={() => handleNavClick('/about')}
-                className="block px-4 py-3 text-gray-700 text-sm font-medium leading-normal hover:text-primary transition-colors border-t border-gray-200"
+                className="block px-4 py-3 text-gray-700 text-sm font-medium leading-normal transition-colors border-t border-gray-200"
+                onMouseEnter={(e) => e.target.style.color = '#8b5cf6'}
+                onMouseLeave={(e) => e.target.style.color = '#374151'}
               >
                 About
               </Link>
               <Link 
                 to="/contact" 
                 onClick={() => handleNavClick('/contact')}
-                className="block px-4 py-3 text-gray-700 text-sm font-medium leading-normal hover:text-primary transition-colors border-t border-gray-200"
+                className="block px-4 py-3 text-gray-700 text-sm font-medium leading-normal transition-colors border-t border-gray-200"
+                onMouseEnter={(e) => e.target.style.color = '#8b5cf6'}
+                onMouseLeave={(e) => e.target.style.color = '#374151'}
               >
                 Contact
               </Link>
@@ -198,8 +212,10 @@ function ContactPage() {
                     handleContactClick();
                     setIsMobileMenuOpen(false);
                   }}
-                  className="w-full flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-4 text-white text-sm font-bold hover:bg-blue-600 transition-colors"
-                  style={{ backgroundColor: '#2b8cee' }}
+                  className="w-full flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-4 text-white text-sm font-bold transition-colors"
+                  style={{ backgroundColor: '#8b5cf6' }}
+                  onMouseEnter={(e) => e.target.style.backgroundColor = '#7c3aed'}
+                  onMouseLeave={(e) => e.target.style.backgroundColor = '#8b5cf6'}
                 >
                   <span className="truncate">Book Now</span>
                 </button>
@@ -214,7 +230,7 @@ function ContactPage() {
           <div className="max-w-[1200px] w-full">
             <div className="flex flex-col gap-3">
               <h1 className="text-gray-900 text-4xl sm:text-5xl font-black leading-tight tracking-[-0.033em]">Get in Touch</h1>
-              <p className="text-blue-800 text-lg font-normal leading-normal">We can't wait to meet your furry friend.</p>
+              <p className="text-base font-normal leading-normal" style={{ color: '#6d28d9' }}>We can't wait to meet your furry friend.</p>
             </div>
           </div>
         </div>
@@ -227,14 +243,15 @@ function ContactPage() {
                 <h2 className="text-2xl font-bold text-gray-900">Contact Information</h2>
                 {contactInfo.map((item, index) => (
                   <div key={index} className="flex gap-4 p-4 rounded-xl border border-gray-200 bg-white transition hover:shadow-md">
-                    <div className="flex-shrink-0 size-12 rounded-full bg-blue-50 flex items-center justify-center text-primary" style={{ color: '#2b8cee' }}>
+                    <div className="flex-shrink-0 size-12 rounded-full flex items-center justify-center" style={{ backgroundColor: '#ede9fe', color: '#8b5cf6' }}>
                       <span className="material-symbols-outlined text-[24px]">{item.icon}</span>
                     </div>
                     <div className="flex flex-col justify-center">
                       <h3 className="text-base font-bold text-gray-900">{item.title}</h3>
                       {item.type === "link" ? (
                         <a 
-                          className="text-blue-800 text-sm hover:underline" 
+                          className="text-sm hover:underline" 
+                          style={{ color: '#6d28d9' }}
                           href={item.href} 
                           target={item.href.startsWith('http') ? "_blank" : "_self"}
                           rel="noopener noreferrer"
@@ -242,7 +259,7 @@ function ContactPage() {
                           {item.content}
                         </a>
                       ) : (
-                        <span className="text-blue-800 text-sm">{item.content}</span>
+                        <span className="text-sm" style={{ color: '#6d28d9' }}>{item.content}</span>
                       )}
                     </div>
                   </div>
@@ -262,11 +279,11 @@ function ContactPage() {
                     <tbody className="divide-y divide-gray-200">
                       {businessHours.map((item, index) => (
                         <tr key={index}>
-                          <td className="px-6 py-4 text-blue-800 text-sm">{item.day}</td>
+                          <td className="px-6 py-4 text-sm" style={{ color: '#6d28d9' }}>{item.day}</td>
                           <td className={`px-6 py-4 text-sm font-medium ${item.closed ? 'text-red-500' : 'text-gray-900'}`}>
                             {item.hours}
-                          </td>
-                        </tr>
+                           </td>
+                         </tr>
                       ))}
                     </tbody>
                   </table>
@@ -280,7 +297,10 @@ function ContactPage() {
                     <a
                       key={idx}
                       href="#"
-                      className="size-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-primary hover:text-white transition-colors"
+                      className="size-10 rounded-full flex items-center justify-center transition-colors"
+                      style={{ backgroundColor: '#f3f4f6', color: '#6b7280' }}
+                      onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = '#8b5cf6'; e.currentTarget.style.color = 'white'; }}
+                      onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = '#f3f4f6'; e.currentTarget.style.color = '#6b7280'; }}
                       aria-label={social.name}
                     >
                       {social.icon}
@@ -295,16 +315,18 @@ function ContactPage() {
               {/* Booking Card */}
               <div 
                 className="rounded-2xl p-8 text-center text-white shadow-lg flex flex-col items-center justify-center gap-4"
-                style={{ background: 'linear-gradient(to right, #2b8cee, #3b82f6)' }}
+                style={{ background: 'linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%)' }}
               >
                 <div className="flex flex-col gap-2">
                   <h2 className="text-2xl font-bold">Ready for a trim?</h2>
-                  <p className="text-blue-100">Book your appointment online instantly. No phone tag required.</p>
+                  <p className="text-purple-100">Book your appointment online instantly. No phone tag required.</p>
                 </div>
                 <button 
                   onClick={handleContactClick}
-                  className="mt-2 w-full max-w-sm rounded-full bg-white py-3.5 px-6 text-base font-bold shadow-sm hover:bg-blue-50 transition-colors flex items-center justify-center gap-2 group"
-                  style={{ color: '#2b8cee' }}
+                  className="mt-2 w-full max-w-sm rounded-full bg-white py-3.5 px-6 text-base font-bold shadow-sm transition-colors flex items-center justify-center gap-2 group"
+                  style={{ color: '#8b5cf6' }}
+                  onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#f3e8ff'}
+                  onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'white'}
                 >
                   <span className="material-symbols-outlined group-hover:animate-pulse">calendar_month</span>
                   Book an Appointment Online
@@ -319,7 +341,7 @@ function ContactPage() {
                     <div className="flex flex-col gap-2">
                       <label className="text-sm font-bold text-gray-900" htmlFor="name">Name</label>
                       <input 
-                        className="w-full rounded-lg border-gray-300 bg-white px-4 py-2.5 text-sm focus:border-primary focus:ring-primary placeholder:text-gray-400 border" 
+                        className="w-full rounded-lg bg-white px-4 py-2.5 text-sm focus:ring-2 placeholder:text-gray-400 border border-gray-300 focus:border-purple-500 focus:ring-purple-500 focus:outline-none" 
                         id="name" 
                         name="name" 
                         placeholder="John Doe" 
@@ -329,7 +351,7 @@ function ContactPage() {
                     <div className="flex flex-col gap-2">
                       <label className="text-sm font-bold text-gray-900" htmlFor="email">Email</label>
                       <input 
-                        className="w-full rounded-lg border-gray-300 bg-white px-4 py-2.5 text-sm focus:border-primary focus:ring-primary placeholder:text-gray-400 border" 
+                        className="w-full rounded-lg bg-white px-4 py-2.5 text-sm focus:ring-2 placeholder:text-gray-400 border border-gray-300 focus:border-purple-500 focus:ring-purple-500 focus:outline-none" 
                         id="email" 
                         name="email" 
                         placeholder="john@example.com" 
@@ -342,7 +364,7 @@ function ContactPage() {
                     <div className="flex flex-col gap-2">
                       <label className="text-sm font-bold text-gray-900" htmlFor="phone">Phone</label>
                       <input 
-                        className="w-full rounded-lg border-gray-300 bg-white px-4 py-2.5 text-sm focus:border-primary focus:ring-primary placeholder:text-gray-400 border" 
+                        className="w-full rounded-lg bg-white px-4 py-2.5 text-sm focus:ring-2 placeholder:text-gray-400 border border-gray-300 focus:border-purple-500 focus:ring-purple-500 focus:outline-none" 
                         id="phone" 
                         name="phone" 
                         placeholder="(555) 123-4567" 
@@ -352,7 +374,7 @@ function ContactPage() {
                     <div className="flex flex-col gap-2">
                       <label className="text-sm font-bold text-gray-900" htmlFor="pet_info">Pet's Name/Service Needed</label>
                       <input 
-                        className="w-full rounded-lg border-gray-300 bg-white px-4 py-2.5 text-sm focus:border-primary focus:ring-primary placeholder:text-gray-400 border" 
+                        className="w-full rounded-lg bg-white px-4 py-2.5 text-sm focus:ring-2 placeholder:text-gray-400 border border-gray-300 focus:border-purple-500 focus:ring-purple-500 focus:outline-none" 
                         id="pet_info" 
                         name="pet_info" 
                         placeholder="e.g. Max - Nail Trim" 
@@ -364,7 +386,7 @@ function ContactPage() {
                   <div className="flex flex-col gap-2">
                     <label className="text-sm font-bold text-gray-900" htmlFor="message">Message</label>
                     <textarea 
-                      className="w-full rounded-lg border-gray-300 bg-white px-4 py-2.5 text-sm focus:border-primary focus:ring-primary placeholder:text-gray-400 border resize-none" 
+                      className="w-full rounded-lg bg-white px-4 py-2.5 text-sm focus:ring-2 placeholder:text-gray-400 border border-gray-300 focus:border-purple-500 focus:ring-purple-500 focus:outline-none resize-none" 
                       id="message" 
                       name="message" 
                       placeholder="Tell us about your pet's needs..." 
@@ -373,9 +395,11 @@ function ContactPage() {
                   </div>
 
                   <button 
-                    className="mt-2 w-full rounded-lg py-3 px-6 text-sm font-bold text-white shadow-sm hover:bg-blue-600 transition-all"
+                    className="mt-2 w-full rounded-lg py-3 px-6 text-sm font-bold text-white shadow-sm transition-all"
                     type="submit"
-                    style={{ backgroundColor: '#2b8cee' }}
+                    style={{ backgroundColor: '#8b5cf6' }}
+                    onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#7c3aed'}
+                    onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#8b5cf6'}
                   >
                     Send Message
                   </button>
@@ -391,19 +415,19 @@ function ContactPage() {
           <div className="col-span-1 md:col-span-1 flex flex-col gap-4">
             <div className="flex items-center gap-2 text-gray-900">
               <div className="size-6 text-primary">
-                <span className="material-symbols-outlined text-xl" style={{ color: '#2b8cee' }}>pets</span>
+                <span className="material-symbols-outlined text-xl" style={{ color: '#8b5cf6' }}>pets</span>
               </div>
-              <Link to="/" onClick={() => handleNavClick('/')} className="font-bold text-lg">Sheya Pet Grooming</Link>
+              <Link to="/" onClick={() => handleNavClick('/')} className="font-bold text-lg">Rhonda Pet Grooming</Link>
             </div>
             <p className="text-gray-600 text-sm">Top-tier grooming services for your beloved pets. We treat them like family.</p>
           </div>
 
           <div className="col-span-1 flex flex-col gap-3">
             <h4 className="font-bold text-gray-900">Links</h4>
-            <Link to="/" onClick={() => handleNavClick('/')} className="text-gray-600 text-sm hover:text-primary">Home</Link>
-            <Link to="/services" onClick={() => handleNavClick('/services')} className="text-gray-600 text-sm hover:text-primary">Services</Link>
-            <Link to="/about" onClick={() => handleNavClick('/about')} className="text-gray-600 text-sm hover:text-primary">About Us</Link>
-            <Link to="/contact" onClick={() => handleNavClick('/contact')} className="text-gray-600 text-sm hover:text-primary">Contact</Link>
+            <Link to="/" onClick={() => handleNavClick('/')} className="text-gray-600 text-sm transition-colors" onMouseEnter={(e) => e.target.style.color = '#8b5cf6'} onMouseLeave={(e) => e.target.style.color = '#4b5563'}>Home</Link>
+            <Link to="/services" onClick={() => handleNavClick('/services')} className="text-gray-600 text-sm transition-colors" onMouseEnter={(e) => e.target.style.color = '#8b5cf6'} onMouseLeave={(e) => e.target.style.color = '#4b5563'}>Services</Link>
+            <Link to="/about" onClick={() => handleNavClick('/about')} className="text-gray-600 text-sm transition-colors" onMouseEnter={(e) => e.target.style.color = '#8b5cf6'} onMouseLeave={(e) => e.target.style.color = '#4b5563'}>About Us</Link>
+            <Link to="/contact" onClick={() => handleNavClick('/contact')} className="text-gray-600 text-sm transition-colors" onMouseEnter={(e) => e.target.style.color = '#8b5cf6'} onMouseLeave={(e) => e.target.style.color = '#4b5563'}>Contact</Link>
           </div>
 
           <div className="col-span-1 flex flex-col gap-3">
@@ -414,7 +438,7 @@ function ContactPage() {
             </div>
             <div className="flex items-center gap-2 text-gray-600 text-sm">
               <span className="material-symbols-outlined text-[18px]">mail</span>
-              sheyapetgrooming@consultant.com
+              rhondapetgrooming@consultant.com
             </div>
             <div className="flex items-center gap-2 text-gray-600 text-sm">
               <span className="material-symbols-outlined text-[18px]">location_on</span>
@@ -431,7 +455,7 @@ function ContactPage() {
         </div>
 
         <div className="max-w-[1280px] mx-auto mt-12 pt-8 border-t border-gray-100 text-center">
-          <p className="text-gray-500 text-sm">© 2026 Sheya Pet Grooming. All rights reserved.</p>
+          <p className="text-gray-500 text-sm">© 2026 Rhonda Pet Grooming. All rights reserved.</p>
         </div>
       </footer>
     </div>

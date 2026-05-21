@@ -37,14 +37,14 @@ function HomePage() {
         <div className="max-w-[1280px] mx-auto px-4 sm:px-10 h-16 flex items-center justify-between">
           <div className="flex items-center gap-4 text-gray-900">
             <div className="size-8 text-primary flex items-center justify-center">
-              <span className="material-symbols-outlined text-3xl">pets</span>
+              <span className="material-symbols-outlined text-3xl" style={{ color: '#8b5cf6' }}>pets</span>
             </div>
             <Link 
               to="/" 
               onClick={() => handleNavClick('/')}
               className="text-lg font-bold leading-tight tracking-[-0.015em]"
             >
-              Sheya Pet Grooming
+              Rhonda Pet Grooming
             </Link>
           </div>
           
@@ -53,29 +53,36 @@ function HomePage() {
             <Link 
               to="/" 
               onClick={() => handleNavClick('/')}
-              className="text-primary text-sm font-medium leading-normal"
-              style={{ color: '#2b8cee' }}
+              className="text-sm font-medium leading-normal"
+              style={{ color: '#8b5cf6' }}
             >
               Home
             </Link>
             <Link 
               to="/services" 
               onClick={() => handleNavClick('/services')}
-              className="text-gray-900 text-sm font-medium leading-normal hover:text-primary transition-colors"
+              className="text-gray-900 text-sm font-medium leading-normal transition-colors"
+              style={{ hover: { color: '#8b5cf6' } }}
+              onMouseEnter={(e) => e.target.style.color = '#8b5cf6'}
+              onMouseLeave={(e) => e.target.style.color = '#111827'}
             >
               Services
             </Link>
             <Link 
               to="/about" 
               onClick={() => handleNavClick('/about')}
-              className="text-gray-900 text-sm font-medium leading-normal hover:text-primary transition-colors"
+              className="text-gray-900 text-sm font-medium leading-normal transition-colors"
+              onMouseEnter={(e) => e.target.style.color = '#8b5cf6'}
+              onMouseLeave={(e) => e.target.style.color = '#111827'}
             >
               About
             </Link>
             <Link 
               to="/contact" 
               onClick={() => handleNavClick('/contact')}
-              className="text-gray-900 text-sm font-medium leading-normal hover:text-primary transition-colors"
+              className="text-gray-900 text-sm font-medium leading-normal transition-colors"
+              onMouseEnter={(e) => e.target.style.color = '#8b5cf6'}
+              onMouseLeave={(e) => e.target.style.color = '#111827'}
             >
               Contact
             </Link>
@@ -95,8 +102,10 @@ function HomePage() {
           {/* Desktop Book Now Button */}
           <button 
             onClick={handleContactClick}
-            className="hidden md:flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 text-white text-sm font-bold hover:bg-blue-600 transition-colors"
-            style={{ backgroundColor: '#2b8cee' }}
+            className="hidden md:flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 text-white text-sm font-bold transition-colors"
+            style={{ backgroundColor: '#8b5cf6' }}
+            onMouseEnter={(e) => e.target.style.backgroundColor = '#7c3aed'}
+            onMouseLeave={(e) => e.target.style.backgroundColor = '#8b5cf6'}
           >
             <span className="truncate">Book Now</span>
           </button>
@@ -109,29 +118,35 @@ function HomePage() {
               <Link 
                 to="/" 
                 onClick={() => handleNavClick('/')}
-                className="block px-4 py-3 text-primary text-sm font-medium leading-normal hover:text-blue-600 transition-colors"
-                style={{ color: '#2b8cee' }}
+                className="block px-4 py-3 text-sm font-medium leading-normal transition-colors"
+                style={{ color: '#8b5cf6' }}
               >
                 Home
               </Link>
               <Link 
                 to="/services" 
                 onClick={() => handleNavClick('/services')}
-                className="block px-4 py-3 text-gray-700 text-sm font-medium leading-normal hover:text-primary transition-colors border-t border-gray-200"
+                className="block px-4 py-3 text-gray-700 text-sm font-medium leading-normal border-t border-gray-200"
+                onMouseEnter={(e) => e.target.style.color = '#8b5cf6'}
+                onMouseLeave={(e) => e.target.style.color = '#374151'}
               >
                 Services
               </Link>
               <Link 
                 to="/about" 
                 onClick={() => handleNavClick('/about')}
-                className="block px-4 py-3 text-gray-700 text-sm font-medium leading-normal hover:text-primary transition-colors border-t border-gray-200"
+                className="block px-4 py-3 text-gray-700 text-sm font-medium leading-normal border-t border-gray-200"
+                onMouseEnter={(e) => e.target.style.color = '#8b5cf6'}
+                onMouseLeave={(e) => e.target.style.color = '#374151'}
               >
                 About
               </Link>
               <Link 
                 to="/contact" 
                 onClick={() => handleNavClick('/contact')}
-                className="block px-4 py-3 text-gray-700 text-sm font-medium leading-normal hover:text-primary transition-colors border-t border-gray-200"
+                className="block px-4 py-3 text-gray-700 text-sm font-medium leading-normal border-t border-gray-200"
+                onMouseEnter={(e) => e.target.style.color = '#8b5cf6'}
+                onMouseLeave={(e) => e.target.style.color = '#374151'}
               >
                 Contact
               </Link>
@@ -141,8 +156,10 @@ function HomePage() {
                     handleContactClick();
                     setIsMobileMenuOpen(false);
                   }}
-                  className="w-full flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-4 text-white text-sm font-bold hover:bg-blue-600 transition-colors"
-                  style={{ backgroundColor: '#2b8cee' }}
+                  className="w-full flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-4 text-white text-sm font-bold transition-colors"
+                  style={{ backgroundColor: '#8b5cf6' }}
+                  onMouseEnter={(e) => e.target.style.backgroundColor = '#7c3aed'}
+                  onMouseLeave={(e) => e.target.style.backgroundColor = '#8b5cf6'}
                 >
                   <span className="truncate">Book Now</span>
                 </button>
@@ -162,7 +179,7 @@ function HomePage() {
         >
           <div className="flex flex-col gap-4 text-left max-w-[720px] z-10">
             <h1 className="text-white text-4xl font-black leading-tight tracking-[-0.033em] md:text-5xl lg:text-6xl drop-shadow-sm">
-              Sheya Pet Grooming — Where Comfort Meets the Perfect Cut.
+              Rhonda Pet Grooming — Where Comfort Meets the Perfect Cut.
             </h1>
             <h2 className="text-white/90 text-lg font-medium leading-normal max-w-[600px] drop-shadow-sm">
               Professional pet styling in a stress-free environment. Give your furry friend the spa day they deserve.
@@ -170,8 +187,10 @@ function HomePage() {
             <div className="pt-4">
               <button 
                 onClick={handleContactClick}
-                className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-6 hover:bg-blue-600 transition-transform hover:scale-105 text-white text-base font-bold leading-normal tracking-[0.015em] shadow-lg"
-                style={{ backgroundColor: '#2b8cee' }}
+                className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-6 transition-transform hover:scale-105 text-white text-base font-bold leading-normal tracking-[0.015em] shadow-lg"
+                style={{ backgroundColor: '#8b5cf6' }}
+                onMouseEnter={(e) => e.target.style.backgroundColor = '#7c3aed'}
+                onMouseLeave={(e) => e.target.style.backgroundColor = '#8b5cf6'}
               >
                 <span className="truncate">Book Your Grooming Spa Day</span>
               </button>
@@ -182,12 +201,12 @@ function HomePage() {
 
       <section className="flex justify-center py-16 px-4 md:px-20 bg-white">
         <div className="max-w-[800px] flex flex-col items-center text-center gap-6">
-          <div className="text-primary" style={{ color: '#2b8cee' }}>
+          <div style={{ color: '#8b5cf6' }}>
             <span className="material-symbols-outlined text-4xl">soap</span>
           </div>
           <h2 className="text-gray-900 text-[28px] md:text-[32px] font-bold leading-tight tracking-[-0.015em]">Grooming is an Act of Love</h2>
           <p className="text-gray-600 text-lg font-normal leading-relaxed">
-            At Sheya Pet Grooming, we believe grooming is an act of love. Our gentle, expert stylists provide a stress-free spa experience for your pet. From a simple bath to a full breed-standard trim, we tailor every service to your pet's unique needs.
+            At Rhonda Pet Grooming, we believe grooming is an act of love. Our gentle, expert stylists provide a stress-free spa experience for your pet. From a simple bath to a full breed-standard trim, we tailor every service to your pet's unique needs.
           </p>
         </div>
       </section>
@@ -196,7 +215,7 @@ function HomePage() {
         <div className="max-w-[1200px] w-full flex flex-col gap-10">
           <div className="flex flex-col gap-2 items-start md:items-center md:text-center">
             <h1 className="text-gray-900 tracking-tight text-[32px] font-bold leading-tight md:text-4xl">
-              Why Choose Sheya?
+              Why Choose Rhonda?
             </h1>
             <p className="text-gray-600 text-base font-normal leading-normal max-w-[720px]">
               We offer more than just a haircut. Experience the difference.
@@ -204,7 +223,7 @@ function HomePage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="flex flex-1 gap-4 rounded-xl border border-gray-200 bg-white p-6 flex-col shadow-sm hover:shadow-md transition-shadow">
-              <div className="text-primary bg-blue-50 w-12 h-12 rounded-full flex items-center justify-center mb-2">
+              <div className="w-12 h-12 rounded-full flex items-center justify-center mb-2" style={{ backgroundColor: '#ede9fe', color: '#8b5cf6' }}>
                 <span className="material-symbols-outlined">spa</span>
               </div>
               <div className="flex flex-col gap-2">
@@ -213,7 +232,7 @@ function HomePage() {
               </div>
             </div>
             <div className="flex flex-1 gap-4 rounded-xl border border-gray-200 bg-white p-6 flex-col shadow-sm hover:shadow-md transition-shadow">
-              <div className="text-primary bg-blue-50 w-12 h-12 rounded-full flex items-center justify-center mb-2">
+              <div className="w-12 h-12 rounded-full flex items-center justify-center mb-2" style={{ backgroundColor: '#ede9fe', color: '#8b5cf6' }}>
                 <span className="material-symbols-outlined">content_cut</span>
               </div>
               <div className="flex flex-col gap-2">
@@ -222,7 +241,7 @@ function HomePage() {
               </div>
             </div>
             <div className="flex flex-1 gap-4 rounded-xl border border-gray-200 bg-white p-6 flex-col shadow-sm hover:shadow-md transition-shadow">
-              <div className="text-primary bg-blue-50 w-12 h-12 rounded-full flex items-center justify-center mb-2">
+              <div className="w-12 h-12 rounded-full flex items-center justify-center mb-2" style={{ backgroundColor: '#ede9fe', color: '#8b5cf6' }}>
                 <span className="material-symbols-outlined">eco</span>
               </div>
               <div className="flex flex-col gap-2">
@@ -231,7 +250,7 @@ function HomePage() {
               </div>
             </div>
             <div className="flex flex-1 gap-4 rounded-xl border border-gray-200 bg-white p-6 flex-col shadow-sm hover:shadow-md transition-shadow">
-              <div className="text-primary bg-blue-50 w-12 h-12 rounded-full flex items-center justify-center mb-2">
+              <div className="w-12 h-12 rounded-full flex items-center justify-center mb-2" style={{ backgroundColor: '#ede9fe', color: '#8b5cf6' }}>
                 <span className="material-symbols-outlined">favorite</span>
               </div>
               <div className="flex flex-col gap-2">
@@ -254,7 +273,7 @@ function HomePage() {
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuB44eQOJBUL2jUWsIlwHEfV6KsHkr6yjzRAPlfnOc1IPvX_KZ53D89UqDb0ppggYXOhflToPMxs43Be6ehODj7WXPHFS8L4Sho2Mpj2jobEZrnJUYigGMsLhNSLk7IxULAiUykVxYLYbZhJpZ72Rh94SmENYMNTLnx2fdTNgO_wjftuihh8_nlCb0ekCTKGF0qSbbd8hZOnm7LVYfXJNuEWRTqzQ9fqyVci8Gg17PbIiNLHk7C86D33eeNHwL2yZ97s2aTRx2ond_Fm" 
               />
             </div>
-            <div className="absolute -bottom-2 -right-2 bg-primary text-white p-2 rounded-full shadow-md" style={{ backgroundColor: '#2b8cee' }}>
+            <div className="absolute -bottom-2 -right-2 text-white p-2 rounded-full shadow-md" style={{ backgroundColor: '#8b5cf6' }}>
               <span className="material-symbols-outlined text-lg">format_quote</span>
             </div>
           </div>
@@ -267,7 +286,7 @@ function HomePage() {
               <span className="material-symbols-outlined fill-current">star</span>
             </div>
             <p className="text-gray-900 text-lg md:text-xl font-medium italic leading-relaxed">
-              "My poodle has never looked better! The team at Sheya was so patient with her anxiety, and she came home looking like a show dog. We are customers for life!"
+              "My poodle has never looked better! The team at Rhonda was so patient with her anxiety, and she came home looking like a show dog. We are customers for life!"
             </p>
             <div>
               <p className="text-gray-900 font-bold text-base">Sarah & Bella</p>
@@ -277,7 +296,7 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="relative py-20 px-4 md:px-20 overflow-hidden" style={{ backgroundColor: '#2b8cee' }}>
+      <section className="relative py-20 px-4 md:px-20 overflow-hidden" style={{ backgroundColor: '#8b5cf6' }}>
         <div 
           className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none" 
           style={{
@@ -290,12 +309,14 @@ function HomePage() {
             Your pet's best groom is just a click away.
           </h2>
           <p className="text-white/90 text-lg md:text-xl font-medium max-w-[600px]">
-            Schedule an appointment today and treat your furry friend to the Sheya experience!
+            Schedule an appointment today and treat your furry friend to the Rhonda experience!
           </p>
           <button 
             onClick={handleContactClick}
-            className="flex cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 px-8 bg-white hover:bg-gray-100 transition-colors text-primary text-lg font-bold leading-normal shadow-lg" 
-            style={{ color: '#2b8cee' }}
+            className="flex cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 px-8 bg-white transition-colors text-lg font-bold leading-normal shadow-lg"
+            style={{ color: '#8b5cf6' }}
+            onMouseEnter={(e) => e.target.style.backgroundColor = '#f3f4f6'}
+            onMouseLeave={(e) => e.target.style.backgroundColor = 'white'}
           >
             Schedule an Appointment
           </button>
@@ -307,19 +328,19 @@ function HomePage() {
           <div className="col-span-1 md:col-span-1 flex flex-col gap-4">
             <div className="flex items-center gap-2 text-gray-900">
               <div className="size-6 text-primary">
-                <span className="material-symbols-outlined text-xl" style={{ color: '#2b8cee' }}>pets</span>
+                <span className="material-symbols-outlined text-xl" style={{ color: '#8b5cf6' }}>pets</span>
               </div>
-              <Link to="/" onClick={() => handleNavClick('/')} className="font-bold text-lg">Sheya Pet Grooming</Link>
+              <Link to="/" onClick={() => handleNavClick('/')} className="font-bold text-lg">Rhonda Pet Grooming</Link>
             </div>
             <p className="text-gray-600 text-sm">Top-tier grooming services for your beloved pets. We treat them like family.</p>
           </div>
 
           <div className="col-span-1 flex flex-col gap-3">
             <h4 className="font-bold text-gray-900">Links</h4>
-            <Link to="/" onClick={() => handleNavClick('/')} className="text-gray-600 text-sm hover:text-primary">Home</Link>
-            <Link to="/services" onClick={() => handleNavClick('/services')} className="text-gray-600 text-sm hover:text-primary">Services</Link>
-            <Link to="/about" onClick={() => handleNavClick('/about')} className="text-gray-600 text-sm hover:text-primary">About Us</Link>
-            <Link to="/contact" onClick={() => handleNavClick('/contact')} className="text-gray-600 text-sm hover:text-primary">Contact</Link>
+            <Link to="/" onClick={() => handleNavClick('/')} className="text-gray-600 text-sm transition-colors" style={{ hover: { color: '#8b5cf6' } }} onMouseEnter={(e) => e.target.style.color = '#8b5cf6'} onMouseLeave={(e) => e.target.style.color = '#4b5563'}>Home</Link>
+            <Link to="/services" onClick={() => handleNavClick('/services')} className="text-gray-600 text-sm transition-colors" onMouseEnter={(e) => e.target.style.color = '#8b5cf6'} onMouseLeave={(e) => e.target.style.color = '#4b5563'}>Services</Link>
+            <Link to="/about" onClick={() => handleNavClick('/about')} className="text-gray-600 text-sm transition-colors" onMouseEnter={(e) => e.target.style.color = '#8b5cf6'} onMouseLeave={(e) => e.target.style.color = '#4b5563'}>About Us</Link>
+            <Link to="/contact" onClick={() => handleNavClick('/contact')} className="text-gray-600 text-sm transition-colors" onMouseEnter={(e) => e.target.style.color = '#8b5cf6'} onMouseLeave={(e) => e.target.style.color = '#4b5563'}>Contact</Link>
           </div>
 
           <div className="col-span-1 flex flex-col gap-3">
@@ -330,7 +351,7 @@ function HomePage() {
             </div>
             <div className="flex items-center gap-2 text-gray-600 text-sm">
               <span className="material-symbols-outlined text-[18px]">mail</span>
-              sheyapetgrooming@consultant.com
+              rhondapetgrooming@consultant.com
             </div>
             <div className="flex items-center gap-2 text-gray-600 text-sm">
               <span className="material-symbols-outlined text-[18px]">location_on</span>
@@ -347,7 +368,7 @@ function HomePage() {
         </div>
 
         <div className="max-w-[1280px] mx-auto mt-12 pt-8 border-t border-gray-100 text-center">
-          <p className="text-gray-500 text-sm">© 2026 Sheya Pet Grooming. All rights reserved.</p>
+          <p className="text-gray-500 text-sm">© 2026 Rhonda Pet Grooming. All rights reserved.</p>
         </div>
       </footer>
     </div>

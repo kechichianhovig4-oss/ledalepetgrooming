@@ -65,14 +65,14 @@ function AboutPage() {
         <div className="max-w-[1280px] mx-auto px-4 sm:px-10 h-16 flex items-center justify-between">
           <div className="flex items-center gap-4 text-gray-900">
             <div className="size-8 text-primary flex items-center justify-center">
-              <span className="material-symbols-outlined text-3xl">pets</span>
+              <span className="material-symbols-outlined text-3xl" style={{ color: '#8b5cf6' }}>pets</span>
             </div>
             <Link 
               to="/" 
               onClick={() => handleNavClick('/')}
               className="text-lg font-bold leading-tight tracking-[-0.015em]"
             >
-              Sheya Pet Grooming
+              Rhonda Pet Grooming
             </Link>
           </div>
           
@@ -81,29 +81,35 @@ function AboutPage() {
             <Link 
               to="/" 
               onClick={() => handleNavClick('/')}
-              className="text-gray-900 text-sm font-medium leading-normal hover:text-primary transition-colors"
+              className="text-gray-900 text-sm font-medium leading-normal transition-colors"
+              onMouseEnter={(e) => e.target.style.color = '#8b5cf6'}
+              onMouseLeave={(e) => e.target.style.color = '#111827'}
             >
               Home
             </Link>
             <Link 
               to="/services" 
               onClick={() => handleNavClick('/services')}
-              className="text-gray-900 text-sm font-medium leading-normal hover:text-primary transition-colors"
+              className="text-gray-900 text-sm font-medium leading-normal transition-colors"
+              onMouseEnter={(e) => e.target.style.color = '#8b5cf6'}
+              onMouseLeave={(e) => e.target.style.color = '#111827'}
             >
               Services
             </Link>
             <Link 
               to="/about" 
               onClick={() => handleNavClick('/about')}
-              className="text-primary text-sm font-bold"
-              style={{ color: '#2b8cee' }}
+              className="text-sm font-bold"
+              style={{ color: '#8b5cf6' }}
             >
               About Us
             </Link>
             <Link 
               to="/contact" 
               onClick={() => handleNavClick('/contact')}
-              className="text-gray-900 text-sm font-medium leading-normal hover:text-primary transition-colors"
+              className="text-gray-900 text-sm font-medium leading-normal transition-colors"
+              onMouseEnter={(e) => e.target.style.color = '#8b5cf6'}
+              onMouseLeave={(e) => e.target.style.color = '#111827'}
             >
               Contact
             </Link>
@@ -123,8 +129,10 @@ function AboutPage() {
           {/* Desktop Book Now Button */}
           <button 
             onClick={handleContactClick}
-            className="hidden md:flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 text-white text-sm font-bold hover:bg-blue-600 transition-colors"
-            style={{ backgroundColor: '#2b8cee' }}
+            className="hidden md:flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 text-white text-sm font-bold transition-colors"
+            style={{ backgroundColor: '#8b5cf6' }}
+            onMouseEnter={(e) => e.target.style.backgroundColor = '#7c3aed'}
+            onMouseLeave={(e) => e.target.style.backgroundColor = '#8b5cf6'}
           >
             <span className="truncate">Book Now</span>
           </button>
@@ -137,29 +145,35 @@ function AboutPage() {
               <Link 
                 to="/" 
                 onClick={() => handleNavClick('/')}
-                className="block px-4 py-3 text-gray-700 text-sm font-medium leading-normal hover:text-primary transition-colors"
+                className="block px-4 py-3 text-gray-700 text-sm font-medium leading-normal transition-colors"
+                onMouseEnter={(e) => e.target.style.color = '#8b5cf6'}
+                onMouseLeave={(e) => e.target.style.color = '#374151'}
               >
                 Home
               </Link>
               <Link 
                 to="/services" 
                 onClick={() => handleNavClick('/services')}
-                className="block px-4 py-3 text-gray-700 text-sm font-medium leading-normal hover:text-primary transition-colors border-t border-gray-200"
+                className="block px-4 py-3 text-gray-700 text-sm font-medium leading-normal transition-colors border-t border-gray-200"
+                onMouseEnter={(e) => e.target.style.color = '#8b5cf6'}
+                onMouseLeave={(e) => e.target.style.color = '#374151'}
               >
                 Services
               </Link>
               <Link 
                 to="/about" 
                 onClick={() => handleNavClick('/about')}
-                className="block px-4 py-3 text-primary text-sm font-bold hover:text-blue-600 transition-colors border-t border-gray-200"
-                style={{ color: '#2b8cee' }}
+                className="block px-4 py-3 text-sm font-bold border-t border-gray-200"
+                style={{ color: '#8b5cf6' }}
               >
                 About Us
               </Link>
               <Link 
                 to="/contact" 
                 onClick={() => handleNavClick('/contact')}
-                className="block px-4 py-3 text-gray-700 text-sm font-medium leading-normal hover:text-primary transition-colors border-t border-gray-200"
+                className="block px-4 py-3 text-gray-700 text-sm font-medium leading-normal transition-colors border-t border-gray-200"
+                onMouseEnter={(e) => e.target.style.color = '#8b5cf6'}
+                onMouseLeave={(e) => e.target.style.color = '#374151'}
               >
                 Contact
               </Link>
@@ -169,8 +183,10 @@ function AboutPage() {
                     handleContactClick();
                     setIsMobileMenuOpen(false);
                   }}
-                  className="w-full flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-4 text-white text-sm font-bold hover:bg-blue-600 transition-colors"
-                  style={{ backgroundColor: '#2b8cee' }}
+                  className="w-full flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-4 text-white text-sm font-bold transition-colors"
+                  style={{ backgroundColor: '#8b5cf6' }}
+                  onMouseEnter={(e) => e.target.style.backgroundColor = '#7c3aed'}
+                  onMouseLeave={(e) => e.target.style.backgroundColor = '#8b5cf6'}
                 >
                   <span className="truncate">Book Now</span>
                 </button>
@@ -185,19 +201,19 @@ function AboutPage() {
         <div className="flex flex-col max-w-[960px] mx-auto w-full mb-8 mt-4">
           <div className="flex flex-wrap justify-between gap-3 p-4">
             <div className="flex min-w-72 flex-col gap-3">
-              <h1 className="text-gray-900 text-4xl font-black leading-tight tracking-[-0.033em]">Getting to Know Sheya Pet Grooming</h1>
-              <p className="text-gray-600 text-lg font-normal leading-normal">A personal and warm welcome from our family to yours.</p>
+              <h1 className="text-gray-900 text-4xl font-black leading-tight tracking-[-0.033em]">Getting to Know Rhonda Pet Grooming</h1>
+              <p className="text-lg font-normal leading-normal" style={{ color: '#6d28d9' }}>A personal and warm welcome from our family to yours.</p>
             </div>
           </div>
         </div>
 
-        {/* Hero Section: Meet Sayed Hashmi */}
+        {/* Hero Section: Meet Rhonda */}
         <div className="flex flex-col max-w-[960px] mx-auto w-full mb-12">
           <div className="@container">
             <div className="flex flex-col gap-6 p-4 py-6 @[480px]:gap-8 @[864px]:flex-row items-center">
               <div 
                 className="w-full bg-center bg-no-repeat bg-cover rounded-xl shadow-lg aspect-[4/5] @[480px]:h-auto @[480px]:min-w-[300px] @[864px]:w-1/2"
-                data-alt="Portrait of Sayed Hashmi smiling warmly while holding a small groomed dog"
+                data-alt="Portrait of Rhonda smiling warmly while holding a small groomed dog"
                 style={{
                   backgroundImage: `url("https://i.imgur.com/KUDwFA6.jpeg")`
                 }}
@@ -205,11 +221,11 @@ function AboutPage() {
               <div className="flex flex-col gap-6 @[480px]:min-w-[300px] @[480px]:gap-8 @[864px]:w-1/2 justify-center">
                 <div className="flex flex-col gap-4 text-left">
                   <h2 className="text-gray-900 text-3xl font-black leading-tight tracking-[-0.033em] @[480px]:text-4xl">
-                    Meet Sayed Hashmi
+                    Meet Rhonda
                   </h2>
                   <div className="text-gray-600 text-base font-normal leading-relaxed space-y-4">
                     <p>
-                      Hi, I'm Sayed! With over 15 years of experience in pet care, I founded this grooming service to provide a calm, loving environment for your furry friends.
+                      Hi, I'm Rhonda! With over 15 years of experience in pet care, I founded this grooming service to provide a calm, loving environment for your furry friends.
                     </p>
                     <p>
                       My journey began volunteering at local shelters, where I learned that patience and gentle touch are just as important as the perfect trim. My passion is ensuring every pet feels safe, comfortable, and loved while in my care.
@@ -218,10 +234,12 @@ function AboutPage() {
                 </div>
                 <button 
                   onClick={handleContactClick}
-                  className="flex w-fit cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-blue-50 text-primary hover:bg-primary hover:text-white transition-all text-sm font-bold leading-normal tracking-[0.015em]"
-                  style={{ color: '#2b8cee' }}
+                  className="flex w-fit cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 transition-all text-sm font-bold leading-normal tracking-[0.015em]"
+                  style={{ backgroundColor: '#ede9fe', color: '#8b5cf6' }}
+                  onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = '#8b5cf6'; e.currentTarget.style.color = 'white'; }}
+                  onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = '#ede9fe'; e.currentTarget.style.color = '#8b5cf6'; }}
                 >
-                  <span className="truncate">Contact Sayed</span>
+                  <span className="truncate">Contact Rhonda</span>
                 </button>
               </div>
             </div>
@@ -242,7 +260,7 @@ function AboutPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
               {philosophyCards.map((card, index) => (
                 <div key={index} className="flex flex-1 gap-4 rounded-xl border border-gray-200 bg-white p-6 flex-col hover:shadow-md transition-shadow">
-                  <div className="text-primary size-8 flex items-center justify-center" style={{ color: '#2b8cee' }}>
+                  <div className="size-8 flex items-center justify-center" style={{ color: '#8b5cf6' }}>
                     <span className="material-symbols-outlined text-3xl">{card.icon}</span>
                   </div>
                   <div className="flex flex-col gap-2">
@@ -257,9 +275,9 @@ function AboutPage() {
 
         {/* Promise Section */}
         <div className="flex flex-col max-w-[960px] mx-auto w-full mb-16 px-4">
-          <div className="bg-blue-50 border border-blue-200 rounded-2xl p-8 md:p-16 text-center shadow-sm">
-            <span className="material-symbols-outlined text-primary text-5xl mb-6" style={{ color: '#2b8cee' }}>verified</span>
-            <h2 className="text-3xl font-bold mb-4 text-gray-900 tracking-tight">The Sheya Promise</h2>
+          <div className="rounded-2xl p-8 md:p-16 text-center shadow-sm" style={{ backgroundColor: '#ede9fe', borderColor: '#c4b5fd', borderWidth: '1px' }}>
+            <span className="material-symbols-outlined text-5xl mb-6" style={{ color: '#8b5cf6' }}>verified</span>
+            <h2 className="text-3xl font-bold mb-4 text-gray-900 tracking-tight">The Rhonda Promise</h2>
             <p className="text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed">
               We promise a personal touch on every groom, using only small-batch, all-natural shampoos in a calm, fear-free environment. Unlike high-volume salons, your pet is family here, and we treat them with the dignity and love they deserve.
             </p>
@@ -294,25 +312,25 @@ function AboutPage() {
         </div>
       </div>
 
-      {/* Footer - Rebranded with Sheya contact info */}
+      {/* Footer - Rebranded with Rhonda contact info */}
       <footer className="bg-white border-t border-gray-200 py-12 px-4 sm:px-10">
         <div className="max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-1 flex flex-col gap-4">
             <div className="flex items-center gap-2 text-gray-900">
               <div className="size-6 text-primary">
-                <span className="material-symbols-outlined text-xl" style={{ color: '#2b8cee' }}>pets</span>
+                <span className="material-symbols-outlined text-xl" style={{ color: '#8b5cf6' }}>pets</span>
               </div>
-              <Link to="/" onClick={() => handleNavClick('/')} className="font-bold text-lg">Sheya Pet Grooming</Link>
+              <Link to="/" onClick={() => handleNavClick('/')} className="font-bold text-lg">Rhonda Pet Grooming</Link>
             </div>
             <p className="text-gray-600 text-sm">Top-tier grooming services for your beloved pets. We treat them like family.</p>
           </div>
 
           <div className="col-span-1 flex flex-col gap-3">
             <h4 className="font-bold text-gray-900">Links</h4>
-            <Link to="/" onClick={() => handleNavClick('/')} className="text-gray-600 text-sm hover:text-primary">Home</Link>
-            <Link to="/services" onClick={() => handleNavClick('/services')} className="text-gray-600 text-sm hover:text-primary">Services</Link>
-            <Link to="/about" onClick={() => handleNavClick('/about')} className="text-gray-600 text-sm hover:text-primary">About Us</Link>
-            <Link to="/contact" onClick={() => handleNavClick('/contact')} className="text-gray-600 text-sm hover:text-primary">Contact</Link>
+            <Link to="/" onClick={() => handleNavClick('/')} className="text-gray-600 text-sm transition-colors" onMouseEnter={(e) => e.target.style.color = '#8b5cf6'} onMouseLeave={(e) => e.target.style.color = '#4b5563'}>Home</Link>
+            <Link to="/services" onClick={() => handleNavClick('/services')} className="text-gray-600 text-sm transition-colors" onMouseEnter={(e) => e.target.style.color = '#8b5cf6'} onMouseLeave={(e) => e.target.style.color = '#4b5563'}>Services</Link>
+            <Link to="/about" onClick={() => handleNavClick('/about')} className="text-gray-600 text-sm transition-colors" onMouseEnter={(e) => e.target.style.color = '#8b5cf6'} onMouseLeave={(e) => e.target.style.color = '#4b5563'}>About Us</Link>
+            <Link to="/contact" onClick={() => handleNavClick('/contact')} className="text-gray-600 text-sm transition-colors" onMouseEnter={(e) => e.target.style.color = '#8b5cf6'} onMouseLeave={(e) => e.target.style.color = '#4b5563'}>Contact</Link>
           </div>
 
           <div className="col-span-1 flex flex-col gap-3">
@@ -323,7 +341,7 @@ function AboutPage() {
             </div>
             <div className="flex items-center gap-2 text-gray-600 text-sm">
               <span className="material-symbols-outlined text-[18px]">mail</span>
-              sheyapetgrooming@consultant.com
+              rhondapetgrooming@consultant.com
             </div>
             <div className="flex items-center gap-2 text-gray-600 text-sm">
               <span className="material-symbols-outlined text-[18px]">location_on</span>
@@ -340,7 +358,7 @@ function AboutPage() {
         </div>
 
         <div className="max-w-[1280px] mx-auto mt-12 pt-8 border-t border-gray-100 text-center">
-          <p className="text-gray-500 text-sm">© 2026 Sheya Pet Grooming. All rights reserved.</p>
+          <p className="text-gray-500 text-sm">© 2026 Rhonda Pet Grooming. All rights reserved.</p>
         </div>
       </footer>
     </div>
