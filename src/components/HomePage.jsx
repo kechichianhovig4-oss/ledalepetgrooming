@@ -355,7 +355,7 @@ function HomePage() {
             </div>
             <div className="flex items-center gap-2 text-gray-600 text-sm">
               <span className="material-symbols-outlined text-[18px]">location_on</span>
-              4012 Packard Ridge Rd, Antioch, CA 94531
+              2710 Graham St, Paris, TX 75460
             </div>
           </div>
 
