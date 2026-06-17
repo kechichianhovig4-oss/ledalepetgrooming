@@ -20,7 +20,7 @@ function ContactPage() {
     {
       icon: "location_on",
       title: "Visit Us",
-      content: "4012 Packard Ridge Rd, Antioch, CA 94531",
+      content: "2710 Graham St, Paris, TX 75460",
       href: "https://maps.google.com/?q=4012+Packard+Ridge+Rd+Antioch+CA+94531",
       type: "link"
     },
