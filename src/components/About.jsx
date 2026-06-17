@@ -300,7 +300,7 @@ function AboutPage() {
                     <span className="material-symbols-outlined text-white text-3xl">location_on</span>
                   </div>
                   <h1 className="text-white text-4xl font-black leading-tight tracking-[-0.033em] md:text-5xl drop-shadow-md">
-                    Our Home: Antioch
+                    Our Home: Paris
                   </h1>
                   <h2 className="text-white/90 text-lg font-medium leading-relaxed drop-shadow-sm">
                     We are proud to be a part of the beautiful Antioch community. Serving our neighbors and their pets is a privilege we cherish every day. We are more than just a business; we are your neighbors.
